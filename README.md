@@ -2,9 +2,9 @@
 
 A collection of my web projects. Each project lives in its own folder.
 
-| Project | Description | Tech |
-| --- | --- | --- |
-| [petxpert-web](petxpert-web/) | Promotional website for petXpert, a pet grooming and veterinary equipment store in Guatemala | HTML, CSS, JavaScript |
+| Project | Description | Tech | Live |
+| --- | --- | --- | --- |
+| [petxpert-web](petxpert-web/) | Promotional website for petXpert, a pet grooming and veterinary equipment store in Guatemala | HTML, CSS, JavaScript | [View site](https://sebasgalin.github.io/portfolio/petxpert-web/) |
 
 ## Adding a project
 
