@@ -23,7 +23,7 @@
   addEventListener('keydown', (e) => e.key === 'Escape' && setMenu(false));
 
   // staggered reveal on scroll
-  document.querySelectorAll('.cards, .why, .stats-grid, .repair-list, .steps, .phones').forEach((group) => {
+  document.querySelectorAll('.cards, .stats-grid, .repair-list, .phones').forEach((group) => {
     [...group.children].forEach((el, i) => el.style.setProperty('--d', `${i * 0.08}s`));
   });
   const revealEls = document.querySelectorAll('.reveal');
@@ -72,6 +72,15 @@
       product.style.transform = `rotate(${-12 + x * 8}deg) translate(${x * 18}px, ${y * 14}px)`;
     });
   }
+
+  // product cards expand to show the description
+  const cards = document.querySelector('.cards');
+  cards && cards.addEventListener('click', (e) => {
+    const card = e.target.closest('.pcard');
+    if (!card || e.target.closest('a')) return;
+    const open = card.classList.toggle('open');
+    card.querySelector('.pcard-toggle').setAttribute('aria-expanded', String(open));
+  });
 
   // repair request -> prefilled WhatsApp message
   const form = document.getElementById('quoteForm');

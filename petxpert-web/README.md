@@ -8,11 +8,9 @@ The site is in Spanish and is built with plain HTML, CSS and JavaScript, with no
 
 | Page | Content |
 | --- | --- |
-| `index.html` | Home: hero, stats, sections overview, brands and contact |
-| `productos.html` | Products |
+| `index.html` | Home: hero, stats, sections overview, brands (MGT, Andis, Purple Dragon, Wahl, Bio-Groom) and contact |
+| `productos.html` | Products: cards expand to show a description and link to WhatsApp |
 | `reparacion.html` | Repair service |
-| `marcas.html` | Brands (Andis, Purple Dragon, Miracle Care, Oster, Heiniger) |
-| `envios.html` | Shipping across Guatemala |
 
 ## Features
 
@@ -29,5 +27,3 @@ Open `index.html` in a browser, or serve the folder with any static server:
 ```bash
 npx serve .
 ```
-
-The "Ver tienda" and "Ver catálogo" buttons link to `http://localhost:4200`, where the companion Angular store app runs during development.
