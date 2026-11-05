@@ -23,7 +23,7 @@
   addEventListener('keydown', (e) => e.key === 'Escape' && setMenu(false));
 
   // staggered reveal on scroll
-  document.querySelectorAll('.cards, .stats-grid, .repair-list, .phones').forEach((group) => {
+  document.querySelectorAll('.cards, .stats-grid, .repair-list, .phones, .trust-grid, .process').forEach((group) => {
     [...group.children].forEach((el, i) => el.style.setProperty('--d', `${i * 0.08}s`));
   });
   const revealEls = document.querySelectorAll('.reveal');
@@ -92,7 +92,7 @@
     err.hidden = !!nombre;
     if (!nombre) return form.elements.nombre.focus();
     const detalle = String(f.get('detalle') || '').trim();
-    const text = `Hola petXpert, soy ${nombre}. Necesito reparar mi equipo: ${f.get('equipo')}.` + (detalle ? ` Detalle: ${detalle}` : '');
+    const text = `Hola PetXpert, soy ${nombre}. Necesito reparar mi equipo: ${f.get('equipo')}.` + (detalle ? ` Detalle: ${detalle}` : '');
     window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
   });
 
