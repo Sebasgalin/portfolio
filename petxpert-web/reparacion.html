@@ -13,6 +13,7 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="canonical" href="https://pet-xpert.com/reparacion.html">
   <script>document.documentElement.classList.add("js")</script>
+  <link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Reparación de equipo | PetXpert">
@@ -27,10 +28,10 @@
   <header class="header" id="top">
     <div class="wrap header-row">
       <a href="index.html" class="brand" aria-label="PetXpert, inicio">
-        <img src="assets/logo.png" alt="PetXpert, equipo para pet grooming y veterinarias" width="120" height="48">
+        <img src="assets/logo.png" alt="PetXpert, equipo para pet grooming y veterinarias" width="134" height="46">
       </a>
       <nav class="nav" id="nav" aria-label="Principal">
-        <a class="btn btn-sm" href="index.html">Inicio</a>
+        <a href="index.html">Inicio</a>
         <a href="productos.html">Productos</a>
         <a href="reparacion.html" aria-current="page">Reparación</a>
         <a href="index.html#contacto">Contacto</a>
@@ -42,35 +43,21 @@
   <main id="contenido">
     <section class="page-hero">
       <div class="wrap">
-        <p class="eyebrow reveal">Servicio técnico</p>
+        <p class="kicker reveal">Servicio técnico</p>
         <h1 class="reveal">¿Se dañó tu equipo? Nosotros lo reparamos.</h1>
         <p class="lead reveal">Diagnóstico, reparación y mantenimiento para que vuelvas a trabajar lo antes posible.</p>
       </div>
     </section>
 
-    <!-- REPARACION -->
-    <section class="section dark flush" id="reparacion">
+    <section class="section dark" id="reparacion">
       <div class="wrap repair-grid">
         <div class="reveal">
           <h2>Qué reparamos</h2>
-
           <ul class="repair-list">
-            <li>
-              <span class="ico"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 20h28l14-8v22L36 28H8z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M14 28l-2 18h10l2-12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-              <div><h3>Secadoras</h3><p>Motor, resistencia, interruptores y más.</p></div>
-            </li>
-            <li>
-              <span class="ico"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 54l22-22M30 34l6 6M34 14l16 16-8 8-16-16z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-              <div><h3>Limadoras</h3><p>Mantenimiento y reparación de tu limadora de grooming.</p></div>
-            </li>
-            <li>
-              <span class="ico"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M24 6v8M32 6v8M40 6v8M20 14h24v8L48 54a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4l4-32z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-              <div><h3>Cortadoras</h3><p>Puesta a punto y reparación de máquinas de corte.</p></div>
-            </li>
-            <li>
-              <span class="ico"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 14v36M14 32h36" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-              <div><h3>Y mucho más</h3><p>¿Tu equipo no está en la lista? Escríbenos y lo revisamos.</p></div>
-            </li>
+            <li><h3>Secadoras</h3><p>Motor, resistencia, interruptores y más.</p></li>
+            <li><h3>Limadoras</h3><p>Mantenimiento y reparación de tu limadora de grooming.</p></li>
+            <li><h3>Cortadoras</h3><p>Puesta a punto y reparación de máquinas de corte.</p></li>
+            <li><h3>Y mucho más</h3><p>¿Tu equipo no está en la lista? Escríbenos y lo revisamos.</p></li>
           </ul>
         </div>
 
@@ -78,7 +65,7 @@
           <h3>Solicita tu reparación</h3>
           <p class="muted">Cuéntanos qué pasa y te respondemos por WhatsApp.</p>
           <label>Tu nombre
-            <input name="nombre" autocomplete="name" required>
+            <input name="nombre" autocomplete="name" required aria-describedby="quoteErr">
           </label>
           <label>Equipo
             <select name="equipo">
@@ -89,28 +76,24 @@
             </select>
           </label>
           <label>¿Qué le pasa?
-            <textarea name="detalle" rows="3" placeholder="Marca, modelo y falla…"></textarea>
+            <textarea name="detalle" rows="3" placeholder="Marca, modelo y falla"></textarea>
           </label>
-          <button class="btn btn-lg" type="submit">Enviar por WhatsApp</button>
           <p class="err" id="quoteErr" role="alert" hidden>Escribe tu nombre para continuar.</p>
+          <button class="btn btn-lg" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Enviar por WhatsApp</button>
         </form>
       </div>
     </section>
 
-    <!-- PROCESO -->
     <section class="section">
       <div class="wrap">
-        <header class="section-head reveal">
-          <p class="eyebrow">Cómo funciona</p>
-          <h2>Así reparamos tu equipo</h2>
-        </header>
+        <h2 class="section-title reveal">Así reparamos tu equipo</h2>
         <ol class="process">
-          <li class="reveal"><b>1</b><h3>Nos escribes</h3><p>Cuéntanos por WhatsApp o por teléfono qué le pasa a tu equipo.</p></li>
-          <li class="reveal"><b>2</b><h3>Recibimos tu equipo</h3><p>En la ciudad pasamos a recogerlo. Desde los departamentos lo envías por Forza o GuatEx.</p></li>
-          <li class="reveal"><b>3</b><h3>Hacemos el diagnóstico</h3><p>Primero revisamos tu equipo para encontrar la falla.</p></li>
-          <li class="reveal"><b>4</b><h3>Lo reparamos</h3><p>Normalmente en no más de una semana, según la falla.</p></li>
+          <li class="reveal"><h3>Nos escribes</h3><p>Cuéntanos por WhatsApp o por teléfono qué le pasa a tu equipo.</p></li>
+          <li class="reveal"><h3>Recibimos tu equipo</h3><p>En la ciudad pasamos a recogerlo. Desde los departamentos lo envías por Forza o GuatEx.</p></li>
+          <li class="reveal"><h3>Hacemos el diagnóstico</h3><p>Primero revisamos tu equipo para encontrar la falla.</p></li>
+          <li class="reveal"><h3>Lo reparamos</h3><p>Normalmente en no más de una semana, según la falla.</p></li>
         </ol>
-        <p class="center muted reveal">Aceptamos transferencia y efectivo. Atendemos llamadas de 8:00 a 19:00.</p>
+        <p class="process-note muted reveal">Aceptamos transferencia y efectivo. Atendemos llamadas de 8:00 a 19:00.</p>
       </div>
     </section>
 
@@ -118,26 +101,45 @@
       <div class="wrap cta-row">
         <div>
           <h2>¿Tienes dudas? Con gusto te ayudamos.</h2>
-          <p>Escríbenos o llámanos al <a href="tel:+50244264949">4426-4949</a> / <a href="tel:+50256029990">5602-9990</a>. Atendemos llamadas de 8:00 a 19:00.</p>
+          <p>Escríbenos o llámanos al <a href="tel:+50244264949">4426-4949</a> o al <a href="tel:+50256029990">5602-9990</a>, de 8:00 a 19:00.</p>
         </div>
         <div class="cta-btns">
-          <a class="btn btn-lg wa" href="https://wa.me/50256029990?text=Hola%20PetXpert%2C%20quisiera%20informaci%C3%B3n" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-          <a class="btn btn-lg btn-dark" href="tel:+50244264949">Llamar ahora</a>
+          <a class="btn btn-lg btn-dark" href="https://wa.me/50256029990?text=Hola%20PetXpert%2C%20quisiera%20informaci%C3%B3n" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Escribir por WhatsApp</a>
+          <a class="btn btn-lg btn-line" href="tel:+50244264949">Llamar ahora</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="wrap footer-row">
-      <img src="assets/logo.png" alt="PetXpert" width="100" height="40" loading="lazy">
-      <p>Equipo para pet grooming y veterinarias · Ciudad de Guatemala · <a href="tel:+50244264949">4426-4949</a> · <a href="tel:+50256029990">5602-9990</a> · <a href="https://www.instagram.com/petxpertguate/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/PetXpertGT/" target="_blank" rel="noopener">Facebook</a></p>
-      <p class="small">© <span id="year">2026</span> PetXpert. Todos los derechos reservados.</p>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <img src="assets/logo.png" alt="PetXpert" width="123" height="42" loading="lazy">
+          <p>Equipo para pet grooming y veterinarias en la Ciudad de Guatemala.</p>
+        </div>
+        <div>
+          <h3>Llámanos</h3>
+          <ul>
+            <li><a href="tel:+50244264949">4426-4949</a></li>
+            <li><a href="tel:+50256029990">5602-9990</a></li>
+            <li>De 8:00 a 19:00</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Síguenos</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/petxpertguate/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/PetXpertGT/" target="_blank" rel="noopener">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-base">© <span id="year">2026</span> PetXpert. Todos los derechos reservados.</p>
     </div>
   </footer>
 
   <a class="wa-float" href="https://wa.me/50256029990?text=Hola%20PetXpert%2C%20quisiera%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
   </a>
 
   <script src="main.js" defer></script>

@@ -13,6 +13,7 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="canonical" href="https://pet-xpert.com/productos.html">
   <script>document.documentElement.classList.add("js")</script>
+  <link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Productos | PetXpert">
@@ -27,10 +28,10 @@
   <header class="header" id="top">
     <div class="wrap header-row">
       <a href="index.html" class="brand" aria-label="PetXpert, inicio">
-        <img src="assets/logo.png" alt="PetXpert, equipo para pet grooming y veterinarias" width="120" height="48">
+        <img src="assets/logo.png" alt="PetXpert, equipo para pet grooming y veterinarias" width="134" height="46">
       </a>
       <nav class="nav" id="nav" aria-label="Principal">
-        <a class="btn btn-sm" href="index.html">Inicio</a>
+        <a href="index.html">Inicio</a>
         <a href="productos.html" aria-current="page">Productos</a>
         <a href="reparacion.html">Reparación</a>
         <a href="index.html#contacto">Contacto</a>
@@ -42,7 +43,6 @@
   <main id="contenido">
     <section class="page-hero">
       <div class="wrap">
-        <p class="eyebrow reveal">Productos</p>
         <h1 class="reveal">Lo mejor para tu sala de grooming o veterinaria</h1>
         <p class="lead reveal">Equipo y productos de calidad profesional, seleccionados para peluquerías caninas, veterinarias y amantes de las mascotas.</p>
       </div>
@@ -50,62 +50,51 @@
 
     <section class="section" id="productos">
       <div class="wrap">
-        
-
-        <div class="cards">
-          <article class="pcard reveal">
-            <h3 class="pcard-head">
-              <button class="pcard-toggle" type="button" aria-expanded="false" aria-controls="pdesc1">
-                <span class="pimg"><img src="assets/wahl-arco.png" alt="Cortadora Wahl Arco" loading="lazy" width="320" height="320"></span>
-                <span class="pcard-name">Cortadoras y máquinas</span>
-              </button>
-            </h3>
-            <div class="pcard-desc" id="pdesc1"><p>Inalámbricas y de cable, para cada tipo de pelaje.</p></div>
-            <a class="more" href="https://wa.me/50256029990?text=Hola%20PetXpert%2C%20quisiera%20informaci%C3%B3n%20sobre%20cortadoras%20y%20m%C3%A1quinas" target="_blank" rel="noopener">Contáctanos →</a>
+        <div class="catalog">
+          <article class="item item-wide reveal">
+            <div class="item-img"><img src="assets/wahl-arco.png" alt="Cortadora Wahl Arco" width="640" height="640" loading="lazy"></div>
+            <div class="item-body">
+              <h3>Cortadoras y máquinas</h3>
+              <p>Inalámbricas y de cable, para cada tipo de pelaje.</p>
+              <a class="more" href="https://wa.me/50256029990?text=Hola%20PetXpert%2C%20quisiera%20informaci%C3%B3n%20sobre%20cortadoras%20y%20m%C3%A1quinas" target="_blank" rel="noopener">Consultar por WhatsApp <span>→</span></a>
+            </div>
           </article>
-          <article class="pcard reveal">
-            <h3 class="pcard-head">
-              <button class="pcard-toggle" type="button" aria-expanded="false" aria-controls="pdesc2">
-                <span class="pimg"><img src="assets/cuchilla5fc.png" alt="Repuestos y accesorios" loading="lazy" width="320" height="320"></span>
-                <span class="pcard-name">Repuestos y accesorios</span>
-              </button>
-            </h3>
-            <div class="pcard-desc" id="pdesc2"><p>Cuchillas, repuestos y accesorios para mantener tu equipo como nuevo.</p></div>
-            <a class="more" href="https://wa.me/50256029990?text=Hola%20PetXpert%2C%20quisiera%20informaci%C3%B3n%20sobre%20repuestos%20y%20accesorios" target="_blank" rel="noopener">Contáctanos →</a>
+          <article class="item reveal">
+            <div class="item-img"><img src="assets/cuchilla5fc.png" alt="Cuchilla para cortadora" width="780" height="920" loading="lazy"></div>
+            <div class="item-body">
+              <h3>Repuestos y accesorios</h3>
+              <p>Cuchillas, repuestos y accesorios para mantener tu equipo como nuevo.</p>
+              <a class="more" href="https://wa.me/50256029990?text=Hola%20PetXpert%2C%20quisiera%20informaci%C3%B3n%20sobre%20repuestos%20y%20accesorios" target="_blank" rel="noopener">Consultar por WhatsApp <span>→</span></a>
+            </div>
           </article>
-          <article class="pcard reveal">
-            <h3 class="pcard-head">
-              <button class="pcard-toggle" type="button" aria-expanded="false" aria-controls="pdesc3">
-                <span class="pimg"><img src="assets/sty-powder.png" alt="Polvo hemostático Kwik Stop" loading="lazy" width="320" height="320"></span>
-                <span class="pcard-name">Cuidado y primeros auxilios</span>
-              </button>
-            </h3>
-            <div class="pcard-desc" id="pdesc3"><p>Polvos, cosméticos y productos de cuidado para el día a día.</p></div>
-            <a class="more" href="https://wa.me/50256029990?text=Hola%20PetXpert%2C%20quisiera%20informaci%C3%B3n%20sobre%20productos%20de%20cuidado%20y%20primeros%20auxilios" target="_blank" rel="noopener">Contáctanos →</a>
+          <article class="item reveal">
+            <div class="item-img"><img src="assets/sty-powder.png" alt="Polvo hemostático Kwik Stop" width="480" height="480" loading="lazy"></div>
+            <div class="item-body">
+              <h3>Cuidado y primeros auxilios</h3>
+              <p>Polvos, cosméticos y productos de cuidado para el día a día.</p>
+              <a class="more" href="https://wa.me/50256029990?text=Hola%20PetXpert%2C%20quisiera%20informaci%C3%B3n%20sobre%20productos%20de%20cuidado%20y%20primeros%20auxilios" target="_blank" rel="noopener">Consultar por WhatsApp <span>→</span></a>
+            </div>
           </article>
         </div>
-
-        <p class="center reveal"><a class="btn btn-lg" href="https://wa.me/50256029990?text=Hola%20PetXpert%2C%20quisiera%20consultar%20por%20m%C3%A1s%20productos" target="_blank" rel="noopener">Consúltanos por más productos</a></p>
+        <p class="catalog-more reveal"><a class="btn btn-lg" href="https://wa.me/50256029990?text=Hola%20PetXpert%2C%20quisiera%20consultar%20por%20m%C3%A1s%20productos" target="_blank" rel="noopener">Consultar más productos</a></p>
       </div>
     </section>
 
-    <!-- CONFIANZA -->
     <section class="section trust">
-      <div class="wrap">
-        <header class="section-head reveal">
-          <p class="eyebrow">Compra con confianza</p>
+      <div class="wrap trust-grid">
+        <div class="reveal">
           <h2>Sabes con quién estás tratando</h2>
-        </header>
-        <div class="trust-grid">
-          <article class="reveal"><span class="ico"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 58C20 44 12 34 12 25a20 20 0 0 1 40 0c0 9-8 19-20 33z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="25" r="7" fill="none" stroke="currentColor" stroke-width="3"/></svg></span><h3>Ciudad de Guatemala</h3><p>Más de 7 años en el mercado, atendiendo a profesionales del grooming.</p></article>
-          <article class="reveal"><span class="ico"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M4 40h36V18H4zM40 28h12l8 8v4H40z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="46" r="5" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="48" cy="46" r="5" fill="none" stroke="currentColor" stroke-width="3"/></svg></span><h3>Entregas</h3><p>En la ciudad entregamos nosotros. A los departamentos enviamos por Forza o GuatEx.</p></article>
-          <article class="reveal"><span class="ico"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 18v14l9 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="32" r="24" fill="none" stroke="currentColor" stroke-width="3"/></svg></span><h3>Horario</h3><p>Atendemos llamadas de 8:00 a 19:00.</p></article>
-          <article class="reveal"><span class="ico"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 14h48v36H8zM8 24h48M20 38h10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Pagos</h3><p>Aceptamos transferencia y efectivo.</p></article>
+          <div class="social">
+            <a class="btn btn-dark" href="https://www.instagram.com/petxpertguate/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>Instagram</a>
+            <a class="btn btn-dark" href="https://www.facebook.com/PetXpertGT/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>Facebook</a>
+          </div>
         </div>
-        <div class="social reveal">
-          <a class="btn btn-dark" href="https://www.instagram.com/petxpertguate/" target="_blank" rel="noopener"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M18 8h28a10 10 0 0 1 10 10v28a10 10 0 0 1-10 10H18A10 10 0 0 1 8 46V18A10 10 0 0 1 18 8zM46 18h.01" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="32" r="11" fill="none" stroke="currentColor" stroke-width="3"/></svg>Instagram</a>
-          <a class="btn btn-dark" href="https://www.facebook.com/PetXpertGT/" target="_blank" rel="noopener"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M36 58V34h8l2-10H36v-6c0-3 1-5 5-5h5V6h-8c-9 0-13 5-13 13v5h-7v10h7v24z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Facebook</a>
-        </div>
+        <dl class="facts">
+          <div class="reveal"><dt>Ciudad de Guatemala</dt><dd>Más de 7 años en el mercado, atendiendo a profesionales del grooming.</dd></div>
+          <div class="reveal"><dt>Entregas</dt><dd>En la ciudad entregamos nosotros. A los departamentos enviamos por Forza o GuatEx.</dd></div>
+          <div class="reveal"><dt>Horario</dt><dd>Atendemos llamadas de 8:00 a 19:00.</dd></div>
+          <div class="reveal"><dt>Pagos</dt><dd>Aceptamos transferencia y efectivo.</dd></div>
+        </dl>
       </div>
     </section>
 
@@ -113,26 +102,45 @@
       <div class="wrap cta-row">
         <div>
           <h2>¿Tienes dudas? Con gusto te ayudamos.</h2>
-          <p>Escríbenos o llámanos al <a href="tel:+50244264949">4426-4949</a> / <a href="tel:+50256029990">5602-9990</a>. Atendemos llamadas de 8:00 a 19:00.</p>
+          <p>Escríbenos o llámanos al <a href="tel:+50244264949">4426-4949</a> o al <a href="tel:+50256029990">5602-9990</a>, de 8:00 a 19:00.</p>
         </div>
         <div class="cta-btns">
-          <a class="btn btn-lg wa" href="https://wa.me/50256029990?text=Hola%20PetXpert%2C%20quisiera%20informaci%C3%B3n" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-          <a class="btn btn-lg btn-dark" href="tel:+50244264949">Llamar ahora</a>
+          <a class="btn btn-lg btn-dark" href="https://wa.me/50256029990?text=Hola%20PetXpert%2C%20quisiera%20informaci%C3%B3n" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Escribir por WhatsApp</a>
+          <a class="btn btn-lg btn-line" href="tel:+50244264949">Llamar ahora</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="wrap footer-row">
-      <img src="assets/logo.png" alt="PetXpert" width="100" height="40" loading="lazy">
-      <p>Equipo para pet grooming y veterinarias · Ciudad de Guatemala · <a href="tel:+50244264949">4426-4949</a> · <a href="tel:+50256029990">5602-9990</a> · <a href="https://www.instagram.com/petxpertguate/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/PetXpertGT/" target="_blank" rel="noopener">Facebook</a></p>
-      <p class="small">© <span id="year">2026</span> PetXpert. Todos los derechos reservados.</p>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <img src="assets/logo.png" alt="PetXpert" width="123" height="42" loading="lazy">
+          <p>Equipo para pet grooming y veterinarias en la Ciudad de Guatemala.</p>
+        </div>
+        <div>
+          <h3>Llámanos</h3>
+          <ul>
+            <li><a href="tel:+50244264949">4426-4949</a></li>
+            <li><a href="tel:+50256029990">5602-9990</a></li>
+            <li>De 8:00 a 19:00</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Síguenos</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/petxpertguate/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/PetXpertGT/" target="_blank" rel="noopener">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-base">© <span id="year">2026</span> PetXpert. Todos los derechos reservados.</p>
     </div>
   </footer>
 
   <a class="wa-float" href="https://wa.me/50256029990?text=Hola%20PetXpert%2C%20quisiera%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
   </a>
 
   <script src="main.js" defer></script>
